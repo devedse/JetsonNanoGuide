@@ -37,7 +37,7 @@ https://avanadedigitalstudionl.visualstudio.com/DS-Parking
 
 ## Install steps
 
-### 1. Davy prereqs
+### 1. The prereqs
 
 ```
 Install Git-LFS
