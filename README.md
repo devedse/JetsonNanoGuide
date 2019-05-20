@@ -40,8 +40,7 @@ https://avanadedigitalstudionl.visualstudio.com/DS-Parking
 ### 1. The prereqs
 
 ```
-Install Git-LFS
-https://packagecloud.io/github/git-lfs/install
+sudo apt-get install git-lfs
 
 Dan deze:
 git lfs install
