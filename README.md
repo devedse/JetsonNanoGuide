@@ -7,8 +7,6 @@ https://devtalk.nvidia.com/default/topic/1049071/pytorch-for-jetson-nano/
 https://devtalk.nvidia.com/default/topic/1051139/jetson-tx2/questions-about-implementing-retinanet-with-tensorrt-on-jetson-tx2/
 https://devtalk.nvidia.com/default/topic/1048776/official-tensorflow-for-jetson-nano-/
 
-https://github.com/devedse/DeveLicensePlateRecognizer
-
 I want to start with following this guide:
 
 https://www.pyimagesearch.com/2019/05/06/getting-started-with-the-nvidia-jetson-nano/
@@ -21,9 +19,35 @@ This dude has cool information on the Jetson Nano:
 
 https://www.pyimagesearch.com/author/adrian/
 
+## My Repositories
+
+### DeveLicensePlateRecognizer
+
+https://github.com/devedse/DeveLicensePlateRecognizer
+
+### DS-Parking
+
+https://avanadedigitalstudionl.visualstudio.com/DS-Parking
+
+`git clone https://avanadedigitalstudionl.visualstudio.com/DS-Parking/_git/VideoAnalytics`
+
+### DS-CarDetectionDataSetExtended
+
+`git clone https://avanadedigitalstudionl.visualstudio.com/DS-CarDetectionDataSetExtended/_git/DS-CarDetectionDataSetExtended`
+
 ## Install steps
 
-### 1. Setup pyhon
+### 1. Davy prereqs
+
+```
+Install Git-LFS
+https://packagecloud.io/github/git-lfs/install
+
+Dan deze:
+git lfs install
+```
+
+### 2. Setup pyhon
 
 https://www.pyimagesearch.com/2019/05/06/getting-started-with-the-nvidia-jetson-nano/
 
