@@ -44,6 +44,8 @@ sudo apt-get install git-lfs
 
 Dan deze:
 git lfs install
+
+git config --global credential.helper store
 ```
 
 ### 2. Setup pyhon
