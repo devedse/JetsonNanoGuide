@@ -52,6 +52,19 @@ git config --global credential.helper store
 
 https://www.pyimagesearch.com/2019/05/06/getting-started-with-the-nvidia-jetson-nano/
 
+### 3. Setup OpenCV
+
+Follow this guide:
+
+https://github.com/jetsonhacks/buildOpenCVXavier
+
+Afterwards copy this file to the virtualenv to make OpenCV work in virtual env too:
+```
+/usr/local/lib/python3.6/dist-packages/cv2.cpython-36m-aarch64-linux-gnu.so
+to
+/home/avanade/.virtualenvs/deep_learning/lib/python3.6/site-packages/cv2.cpython-36m-aarch64-linux-gnu.so
+```
+
 ## Interesting things
 
 ### Jetson Inference
@@ -67,7 +80,7 @@ Note: Je moet wel je webcam op id: 0 zetten in een paar van die sample filetjes
 From: https://devtalk.nvidia.com/default/topic/1049448/quick-build-guide-for-visual-studio-code-on-the-nano/
 
 
-```
+```sh
 # Yarn package repo
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
@@ -95,4 +108,13 @@ sudo dpkg -i ./.build/linux/deb/arm64/deb/code-oss_1.??.?-*_arm64.deb
 
 # Reboot
 code-oss
+```
+## Usefull Commands
+
+```py
+# Start python environment
+workon deep_learning
+
+# Stop python environment
+deactivate
 ```
