@@ -133,3 +133,12 @@ workon deep_learning
 # Stop python environment
 deactivate
 ```
+
+## Docker Raspberry PI Like Custom Vision thing
+
+```
+(Fill in access key as password)
+sudo docker login -u avanadedigitalstudionl avanadedigitalstudionl.azurecr.io
+
+sudo docker pull avanadedigitalstudionl.azurecr.io/dsobjectdetectorappdocker
+```
