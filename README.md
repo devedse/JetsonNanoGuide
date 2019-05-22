@@ -168,4 +168,6 @@ For information on how to use these files to create and deploy through AzureML c
 ```
 
 Ofwel bijvoorbeeld deze:
-`curl -X POST http://127.0.0.1/image -F imageData=@/home/Avanade/Desktop/Detection/stuff/Image.jpg`
+```
+curl -X POST http://127.0.0.1/image -F imageData=@/home/Avanade/Desktop/Detection/stuff/Image.jpg
+```
