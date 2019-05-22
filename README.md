@@ -65,6 +65,21 @@ to
 /home/avanade/.virtualenvs/deep_learning/lib/python3.6/site-packages/cv2.cpython-36m-aarch64-linux-gnu.so
 ```
 
+### 4. Setup Keras-Retinanet
+
+```
+pip install all these:
+keras six scipy cython Pillow progressbar2 matplotlib graphviz scikit-learn pydot flask flask-restful
+
+pip install keras-resnet
+
+# Install keras retinanet
+git clone https://github.com/fizyr/keras-retinanet
+cd to this folder
+modify setup.py and remove the dependency on OpenCV
+pip install .
+```
+
 ## Interesting things
 
 ### Jetson Inference
