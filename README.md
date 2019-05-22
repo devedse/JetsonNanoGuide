@@ -80,7 +80,7 @@ Note: Je moet wel je webcam op id: 0 zetten in een paar van die sample filetjes
 From: https://devtalk.nvidia.com/default/topic/1049448/quick-build-guide-for-visual-studio-code-on-the-nano/
 
 
-```sh
+```Shell
 # Yarn package repo
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
