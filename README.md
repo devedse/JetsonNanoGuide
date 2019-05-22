@@ -111,7 +111,7 @@ code-oss
 ```
 ## Usefull Commands
 
-```py
+```Python
 # Start python environment
 workon deep_learning
 
