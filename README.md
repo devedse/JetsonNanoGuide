@@ -147,8 +147,8 @@ And to run it:
 ```
 How to run locally:
 ==============================================
-docker run -p 127.0.0.1:80:80 -d avanadedigitalstudionl.azurecr.io/dsobjectdetectorappdocker
-docker run -it --rm -p 0.0.0.0:80:80 avanadedigitalstudionl.azurecr.io/dsobjectdetectorappdocker
+sudo docker run -p 127.0.0.1:80:80 -d avanadedigitalstudionl.azurecr.io/dsobjectdetectorappdocker
+sudo docker run -it --rm -p 0.0.0.0:80:80 avanadedigitalstudionl.azurecr.io/dsobjectdetectorappdocker
 
 Then use your favorite tool to connect to the end points.
 
