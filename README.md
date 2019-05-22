@@ -166,3 +166,6 @@ e.g.
 
 For information on how to use these files to create and deploy through AzureML check out the readme.txt in the azureml directory.
 ```
+
+Ofwel bijvoorbeeld deze:
+`curl -X POST http://127.0.0.1/image -F imageData=@/home/Avanade/Desktop/Detection/stuff/Image.jpg`
