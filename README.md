@@ -68,6 +68,8 @@ to
 ### 4. Setup Keras-Retinanet
 
 ```
+workon deep_learning
+
 pip install all these:
 keras six scipy cython Pillow progressbar2 matplotlib graphviz scikit-learn pydot flask flask-restful
 
@@ -78,6 +80,15 @@ git clone https://github.com/fizyr/keras-retinanet
 cd to this folder
 modify setup.py and remove the dependency on OpenCV
 pip install .
+```
+
+### 5. Setup other Python libraries
+
+**MQTT:**
+http://www.steves-internet-guide.com/into-mqtt-python-client/
+```
+workon deep_learning
+pip install paho-mqtt
 ```
 
 ## Interesting things
