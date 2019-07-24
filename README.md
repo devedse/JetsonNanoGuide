@@ -56,11 +56,20 @@ https://www.pyimagesearch.com/2019/05/06/getting-started-with-the-nvidia-jetson-
 
 Follow this guide:
 
-https://github.com/jetsonhacks/buildOpenCVXavier
+--https://github.com/jetsonhacks/buildOpenCVXavier--
+
+Fixed issue where OpenCV addons could not be used. E.g. Aruca for marker detection.
+https://github.com/devedse/buildOpenCVXavier
+
 
 Afterwards copy this file to the virtualenv to make OpenCV work in virtual env too:
 ```
+jetsonhacks build:
 /usr/local/lib/python3.6/dist-packages/cv2.cpython-36m-aarch64-linux-gnu.so
+
+Devedse build:
+/usr/local/lib/python3.6/dist-packages/cv2/python-3.6/cv2.cpython-36m-aarch64-linux-gnu.so
+
 to
 /home/avanade/.virtualenvs/deep_learning/lib/python3.6/site-packages/cv2.cpython-36m-aarch64-linux-gnu.so
 ```
