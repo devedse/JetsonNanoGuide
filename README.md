@@ -191,3 +191,24 @@ Ofwel bijvoorbeeld deze:
 ```
 curl -X POST http://127.0.0.1/image -F imageData=@/home/Avanade/Desktop/Detection/stuff/Image.jpg
 ```
+
+## Starting commands
+
+### Start the Car Detector
+
+Open a terminal and type:
+```
+sudo systemctl isolate multi-user
+```
+
+The UI now closes and you end up in a full screen terminal.
+Login using:
+Username: avanade
+Password: ********
+
+Then type:
+```
+cd Desktop/Detection/VideoAnalytics/Src
+workon deep_learning           # Simply type workon <tab> and it will autocomplete
+python CarFinderWebCamMqttAruco.py
+```
