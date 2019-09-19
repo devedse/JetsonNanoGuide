@@ -212,3 +212,22 @@ cd Desktop/Detection/VideoAnalytics/Src
 workon deep_learning           # Simply type workon <tab> and it will autocomplete
 python CarFinderWebCamMqttAruco.py
 ```
+
+### Boot to terminal mode
+
+It's also possible to directly boot to terminal mode
+
+Disable GUI
+```
+sudo systemctl set-default multi-user.target
+```
+
+Enable GUI
+```
+sudo systemctl set-default graphical.target
+```
+
+Boot to GUI once
+```
+sudo systemctl start gdm3.service
+```
