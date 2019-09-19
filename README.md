@@ -196,6 +196,8 @@ curl -X POST http://127.0.0.1/image -F imageData=@/home/Avanade/Desktop/Detectio
 
 ### Boot to terminal mode
 
+From: https://devtalk.nvidia.com/default/topic/1050739/how-to-boot-jetson-nano-in-text-mode-/
+
 It's also possible to directly boot to terminal mode
 
 Disable GUI
