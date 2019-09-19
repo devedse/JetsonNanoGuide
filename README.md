@@ -192,6 +192,47 @@ Ofwel bijvoorbeeld deze:
 curl -X POST http://127.0.0.1/image -F imageData=@/home/Avanade/Desktop/Detection/stuff/Image.jpg
 ```
 
+## Automating stuff
+
+### Boot to terminal mode
+
+It's also possible to directly boot to terminal mode
+
+Disable GUI
+```
+sudo systemctl set-default multi-user.target
+```
+
+Enable GUI
+```
+sudo systemctl set-default graphical.target
+```
+
+Boot to GUI once
+```
+sudo systemctl start gdm3.service
+```
+
+### Autologin in Terminal
+
+Run this
+```
+sudo systemctl edit getty@tty1
+```
+
+Enter this (replace avanade by your username)
+```
+[Service]
+ExecStart=
+ExecStart=ExecStart=-/sbin/agetty -a avanade --noclear %I $TERM
+```
+
+Reboot
+
+### Auto start script on boot
+
+...
+
 ## Starting commands
 
 ### Start the Car Detector
@@ -211,23 +252,4 @@ Then type:
 cd Desktop/Detection/VideoAnalytics/Src
 workon deep_learning           # Simply type workon <tab> and it will autocomplete
 python CarFinderWebCamMqttAruco.py
-```
-
-### Boot to terminal mode
-
-It's also possible to directly boot to terminal mode
-
-Disable GUI
-```
-sudo systemctl set-default multi-user.target
-```
-
-Enable GUI
-```
-sudo systemctl set-default graphical.target
-```
-
-Boot to GUI once
-```
-sudo systemctl start gdm3.service
 ```
