@@ -264,8 +264,24 @@ sudo chmod 755 /etc/init.d/superscript
 Register to run at startup:
 
 ```
-sudo update-rc.d superscript defaults
+# (dit werkt niet) sudo update-rc.d superscript defaults
 ```
+
+Instead do this:
+From: https://superuser.com/questions/565371/how-to-make-script-command-loaded-automatically-on-terminal-login
+
+```
+nano /home/avanade/.bashrc
+```
+
+Add this to the bottom:
+```
+bash /etc/init.d/superscript
+```
+
+Save the file with Ctrl + X, then Y, then enter
+
+Reboot :)
 
 ## Starting commands
 
