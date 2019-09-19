@@ -231,7 +231,35 @@ Reboot
 
 ### Auto start script on boot
 
-...
+Create startup script:
+
+```
+sudo nano /etc/init.d/superscript
+```
+
+Enter the following:
+
+```
+#!/bin/bash
+source `which virtualenvwrapper.sh`
+cd /home/avanade/Desktop/Detection/VideoAnalytics/Src
+workon deep_learning
+python CarFinderWebCamMqttAruco.py
+```
+
+Save the file with Ctrl + X, then Y, then enter
+
+Chmod the file:
+
+```
+sudo chmod 755 /etc/init.d/superscript
+```
+
+Register to run at startup:
+
+```
+sudo update-rc.d superscript defaults
+```
 
 ## Starting commands
 
