@@ -215,6 +215,8 @@ sudo systemctl start gdm3.service
 
 ### Autologin in Terminal
 
+From: https://askubuntu.com/questions/175248/how-to-autologin-without-entering-username-and-passwordin-text-mode
+
 Run this
 ```
 sudo systemctl edit getty@tty1
@@ -230,6 +232,8 @@ ExecStart=ExecStart=-/sbin/agetty -a avanade --noclear %I $TERM
 Reboot
 
 ### Auto start script on boot
+
+From: https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up
 
 Create startup script:
 
